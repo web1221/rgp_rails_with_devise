@@ -44,6 +44,8 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'devise'
+  gem 'capybara'
+  gem 'simplecov', require: false
 end
 
 group :development do
@@ -58,3 +60,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+group :test do
+  gem 'shoulda-matchers'
+end
